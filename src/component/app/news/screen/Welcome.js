@@ -16,12 +16,15 @@ const Welcome = () => {
             <Text style={styles.cap}>a barista!</Text>
             <Text style={styles.cap1}>Magic coffee on order.</Text>
 
-            <View style={styles.next}>
-                <Image style={styles.image1}
-                    source={require('../../../../media/images/greenrectangle.png')}/>
-                <Image style={styles.image2}
-                    source={require('../../../../media/images/ArrowRight.png')}/>
-            </View>
+            <Pressable >
+
+                <View style={styles.next}>
+                    <Image style={styles.image1}
+                        source={require('../../../../media/images/greenrectangle.png')}/>
+                    <Image style={styles.image2}
+                        source={require('../../../../media/images/ArrowRight.png')}/>
+                </View>
+            </Pressable>
 
         </View>
     )
