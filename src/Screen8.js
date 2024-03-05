@@ -65,10 +65,6 @@ const Screen8 = () => {
 };
 
 export default Screen8
-const style = StyleSheet.create({
-    container:{
-        flex:1,
-    },
 
     header:{
       
