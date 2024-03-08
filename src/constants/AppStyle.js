@@ -47,6 +47,13 @@ export const appStyle = StyleSheet.create({
         height: 28,
     },
 
+    //---------IMAGE-----------------//
+
+    imageMedium: {
+        width: windowWidth*0.35,
+        windowHeight: windowHeight*0.2
+    },
+
     //----------TEXT----------------//
     text14: {
         fontSize: 14,

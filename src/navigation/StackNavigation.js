@@ -15,6 +15,7 @@ import MyorderHistory from '../screens/Main/HistoryTab/MyorderHistory';
 import { Image, Text, View } from 'react-native';
 import Account from '../screens/Main/ProfileTab/Account';
 import Forgot_password from '../screens/Begin/Forgot_password';
+import MyCart from '../screens/Main/HomeTab/MyCart';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -56,6 +57,7 @@ const StackHome = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Home" component={Home}></Stack.Screen>
+      <Stack.Screen name="MyCart" component={MyCart}></Stack.Screen>
 
 
     </Stack.Navigator>
@@ -65,8 +67,8 @@ const StackHome = () => {
 const StackHistory = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="MyorderHistory" component={MyorderHistory}></Stack.Screen>
       <Stack.Screen name="MyorderCurrent" component={MyorderCurrent}></Stack.Screen>
+      <Stack.Screen name="MyorderHistory" component={MyorderHistory}></Stack.Screen>
     </Stack.Navigator>
   )
 };
@@ -154,7 +156,7 @@ const StackNavigation = () => {
   return (
     <>
       {
-        isLogin == false ? <StackBegin /> : <Main />
+        isLogin == true ? <StackBegin /> : <Main />
       }
     </>
 

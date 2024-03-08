@@ -41,4 +41,11 @@ export const ICON = {
 
     //---------IMAGE----------//
     Start: require('../media/images/startScreen.png'),
+    Americano: require('../media/images/americano.png'),
+    Cappuchino: require('../media/images/cappuchino.png'),
+    Latte: require('../media/images/latte.png'),
+    Flatwhite: require('../media/images/flatwhite.png'),
+    Raf: require('../media/images/raf.png'),
+    Espresso: require('../media/images/espresso.png'),
+
 }
