@@ -29,6 +29,17 @@ export const appStyle = StyleSheet.create({
         paddingHorizontal: 12
     },
 
+    circle:{
+        width:50,
+        height:50,
+        borderRadius:25,
+        backgroundColor: COLOR.secondary,
+        justifyContent:'center',
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: COLOR.primary
+    },
+
     //---------ICON-----------------//
     iconSmall: {
         width: 16,
@@ -91,7 +102,7 @@ export const appStyle = StyleSheet.create({
         fontWeight: '500',
         fontStyle: 'normal',
         letterSpacing: 0.3,
-        color: COLOR.text,
+        color: COLOR.primary,
     },
     text18Bold: {
         fontSize: 18,
@@ -110,6 +121,21 @@ export const appStyle = StyleSheet.create({
     },
     text20Bold: {
         fontSize: 20,
+        fontWeight: 'bold',
+        fontStyle: 'normal',
+        letterSpacing: 0.5,
+        color: COLOR.text,
+    },
+
+    text22: {
+        fontSize: 22,
+        fontWeight: '500',
+        fontStyle: 'normal',
+        letterSpacing: 0.3,
+        color: COLOR.text,
+    },
+    text22Bold: {
+        fontSize: 22,
         fontWeight: 'bold',
         fontStyle: 'normal',
         letterSpacing: 0.5,

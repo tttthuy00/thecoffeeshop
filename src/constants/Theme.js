@@ -3,6 +3,7 @@ export const COLOR = {
     secondary: '#F7F8FB',
     pink: '#C58BF2',
     background: '#FFFFFF',
+    lightGray:'#787878',
 
 
     //-------TEXT------------------------------//
@@ -38,6 +39,9 @@ export const ICON = {
     Mail: require('../media/icons/mail.png'),
     Next: require('../media/icons/next.png'),
     Phone: require('../media/icons/phone.png'),
+    More: require('../media/icons/more.png'),
+    Gift: require('../media/icons/gift.png'),
+    Save: require('../media/icons/save.png'),
 
     //---------IMAGE----------//
     Start: require('../media/images/startScreen.png'),

@@ -16,6 +16,7 @@ import { Image, Text, View } from 'react-native';
 import Account from '../screens/Main/ProfileTab/Account';
 import Forgot_password from '../screens/Begin/Forgot_password';
 import MyCart from '../screens/Main/HomeTab/MyCart';
+import UpdateAccount from '../screens/Main/ProfileTab/UpdateAccount';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -77,6 +78,8 @@ const StackProfile = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Account" component={Account}></Stack.Screen>
+      <Stack.Screen name="UpdateAccount" component={UpdateAccount}></Stack.Screen>
+
     </Stack.Navigator>
   )
 };
