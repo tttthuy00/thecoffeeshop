@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const OrderScreen = () => {
+const AppInput = () => {
   return (
     <View>
-      <Text>OrderScreen</Text>
+      <Text>AppInput</Text>
     </View>
   )
 }
 
-export default OrderScreen
+export default AppInput
 
 const styles = StyleSheet.create({})

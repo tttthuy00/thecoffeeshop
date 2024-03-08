@@ -1,5 +1,8 @@
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import React from 'react'
+import FastImage from 'react-native-fast-image';
+import { ICON } from '../../../constants/Theme';
+import { appStyle } from '../../../constants/AppStyle';
 
 const MyorderHistory = (props) => {
   const { navigation } = props;
@@ -9,7 +12,7 @@ const MyorderHistory = (props) => {
       <Text style={styles.title}>My Order</Text>
 
       <View style={styles.form}>
-        <Pressable onPress={() => navigation.navigate('Current')}>
+        <Pressable onPress={() => navigation.navigate('MyorderCurrent')}>
           <View>
             <Text style={styles.ongoing}>On going</Text>
             <View style={styles.rectangle1}>
@@ -34,14 +37,12 @@ const MyorderHistory = (props) => {
         <View>
           <Text style={styles.title1}>24 June | 12:30 PM</Text>
           <View style={styles.form1}>
-            <Image style={styles.image}
-              source={require('../../../../media/images/iconcup.png')} />
+            <FastImage resizeMode='stretch' source={ICON.Coffee} style={appStyle.iconMedium} />
             <Text style={styles.title2}>Americano</Text>
           </View>
 
           <View style={styles.form1}>
-            <Image style={styles.image}
-              source={require('../../../../media/images/iconaddress.png')} />
+            <FastImage resizeMode='stretch' source={ICON.Location} style={appStyle.iconMedium} />
             <Text style={styles.title2}>Bradford BD1 1PR</Text>
           </View>
         </View>
@@ -64,14 +65,13 @@ const MyorderHistory = (props) => {
         <View>
           <Text style={styles.title1}>24 June | 12:30 PM</Text>
           <View style={styles.form1}>
-            <Image style={styles.image}
-              source={require('../../../../media/images/iconcup.png')} />
+            <FastImage resizeMode='stretch' source={ICON.Coffee} style={appStyle.iconMedium} />
+
             <Text style={styles.title2}>Americano</Text>
           </View>
 
           <View style={styles.form1}>
-            <Image style={styles.image}
-              source={require('../../../../media/images/iconaddress.png')} />
+            <FastImage resizeMode='stretch' source={ICON.Location} style={appStyle.iconMedium} />
             <Text style={styles.title2}>Bradford BD1 1PR</Text>
           </View>
         </View>
